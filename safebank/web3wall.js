@@ -14,7 +14,7 @@ console.log("TARGET_CHAIN_ID_HEX", TARGET_CHAIN_ID_HEX)
 
 // Setup smart contract interaction
 const TOKEN_LOCATION = "https://raw.githubusercontent.com/twireDao/Membership-NFT-Metadata/main/TwireMembershipABI.json"
-const TOKEN_ADDRESS = "0x5C68479b17643F9EF02892D90f4c8c30D56aF9Aa"
+const TOKEN_ADDRESS = "0x8909cB5dAB9538F2a1B6f9FB46ee8575cb21B8C4"
 
 // Unpkg imports
 const Web3Modal = window.Web3Modal.default;
