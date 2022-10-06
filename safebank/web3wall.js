@@ -14,7 +14,7 @@ console.log("TARGET_CHAIN_ID_HEX", TARGET_CHAIN_ID_HEX)
 
 // Setup smart contract interaction
 const TOKEN_LOCATION = "https://raw.githubusercontent.com/twireDao/content/main/safebank/SpakaAbi.json"
-const TOKEN_ADDRESS = "0x8909cB5dAB9538F2a1B6f9FB46ee8575cb21B8C4"
+const TOKEN_ADDRESS = "0x02BF3D5b2D310e5a2C3b16167507b69c0e6312CF"
 
 // Unpkg imports
 const Web3Modal = window.Web3Modal.default;
