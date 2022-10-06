@@ -13,7 +13,7 @@ console.log("TARGET_CHAIN_ID_HEX", TARGET_CHAIN_ID_HEX)
 
 
 // Setup smart contract interaction
-const TOKEN_LOCATION = "https://raw.githubusercontent.com/twireDao/Membership-NFT-Metadata/main/TwireMembershipABI.json"
+const TOKEN_LOCATION = "https://raw.githubusercontent.com/twireDao/content/main/safebank/SpakaAbi.json"
 const TOKEN_ADDRESS = "0x8909cB5dAB9538F2a1B6f9FB46ee8575cb21B8C4"
 
 // Unpkg imports
@@ -43,7 +43,7 @@ function init() {
     console.log("WalletConnectProvider is", WalletConnectProvider);
     console.log("window.ethereum is", window.ethereum);
 
-   
+
     const providerOptions = {
         walletconnect: {
             package: WalletConnectProvider,
@@ -90,7 +90,7 @@ async function fetchAccountData() {
     console.log("Got accounts", accounts);
     selectedAccount = accounts[0];
 
-   // document.querySelector("#selected-account").textContent = selectedAccount;
+    // document.querySelector("#selected-account").textContent = selectedAccount;
 
     if (chainData.chainId != TARGET_CHAIN_ID) {
         document.querySelector("#changeChainInfo").style.display = "block";
@@ -252,7 +252,7 @@ async function checkMembership() {
     const accounts = await web3.eth.getAccounts();
     selectedAccount = accounts[0];
 
-    const balance = await TokenContract.balanceOf(selectedAccount)
+    const balance = await TokenContract.balanceOf(selectedAccount, 1)
 
     console.log("Token balance:", balance)
 
