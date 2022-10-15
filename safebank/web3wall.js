@@ -54,7 +54,7 @@ function init() {
         },
         'custom-coinbase': {
             display: {
-                logo: 'images/coinbase.svg',
+                logo: 'https://raw.githubusercontent.com/twireDao/content/0.1.4/walletlink/coinbase.svg',
                 name: 'Coinbase',
                 description: 'Scan with WalletLink to connect',
             },
