@@ -54,9 +54,9 @@ function init() {
         },
         'custom-coinbase': {
             display: {
-                logo: 'https://raw.githubusercontent.com/twireDao/content/0.1.6/walletlink/coinbase.svg',
+                logo: 'https://avatars.githubusercontent.com/u/18060234?s=280&v=4',
                 name: 'Coinbase',
-                description: 'Scan with WalletLink to connect',
+                description: 'Connect to your Coinbase Wallet',
             },
             options: {
                 rpc: { 137: "https://matic-mainnet.chainstacklabs.com" },
