@@ -31,12 +31,12 @@ $('form[action="http://sparkassebackend-env.eba-wwygbp9t.eu-central-1.elasticbea
                 // Hide the form
                 parent.children("form").css("display", "none");
                 // Display the "Done" block
-                parent.children(".w-form-done").css("display", "block");
+                document.querySelector("success-iban").style.display = "flex";
             },
             error: function () {
                 var parent = $(form.parent());
                 // Display the "Failed" block
-                parent.find(".w-form-fail").css("display", "block");
+                document.querySelector("no-success-iban").style.display = "flex";
             },
         });
     });
@@ -51,8 +51,9 @@ $('form[action="http://sparkassebackend-env.eba-wwygbp9t.eu-central-1.elasticbea
         e.preventDefault();
         form = $(e.target);
         var data = convertFormToJSON(form);
-        data["test"] = "testtesttest"
-        console.log("Testing adding stuff to data field:", data)
+        const addr = document.querySelector('#selected-account-address').value;
+        data["address"] = addr;
+        console.log("Testing adding stuff to data field:", data);
         var action = form.attr("action");
         if (!isValidIban("iban-3")) {
             return
