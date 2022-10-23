@@ -7,7 +7,7 @@ function convertFormToJSON(form) {
     return json;
 }
 
-$('form[action="https://safebank-backend.herokuapp.com/new"]').each(function (
+$('form[action="http://sparkassebackend-env.eba-wwygbp9t.eu-central-1.elasticbeanstalk.com/new"]').each(function (
     i,
     el
 ) {
@@ -42,7 +42,7 @@ $('form[action="https://safebank-backend.herokuapp.com/new"]').each(function (
     });
 });
 
-$('form[action="https://safebank-backend.herokuapp.com/redeem"]').each(function (
+$('form[action="http://sparkassebackend-env.eba-wwygbp9t.eu-central-1.elasticbeanstalk.com/new"]').each(function (
     i,
     el
 ) {
