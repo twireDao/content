@@ -9,9 +9,13 @@ function isValidIban(ibanID) {
 
     if (!isIban) {
         document.querySelector(messageInvalidIban).style.display = "block";
+        return false
     } else if (!includedInBlz) {
         document.querySelector(messageNotAPartnerIban).style.display = "block";
+        return false
     }
+
+    return true
 
 }
 

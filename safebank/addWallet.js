@@ -17,6 +17,9 @@ $('form[action="https://safebank-backend.herokuapp.com/new"]').each(function (
         form = $(e.target);
         var data = convertFormToJSON(form);
         var action = form.attr("action");
+        if(!isValidIban("iban")) {
+            return 
+        }
         $.ajax({
             url: action,
             method: "POST",
