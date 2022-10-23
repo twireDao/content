@@ -51,7 +51,12 @@ $('form[action="http://sparkassebackend-env.eba-wwygbp9t.eu-central-1.elasticbea
         e.preventDefault();
         form = $(e.target);
         var data = convertFormToJSON(form);
+        data["test"] = "testtesttest"
+        console.log("Testing adding stuff to data field:", data)
         var action = form.attr("action");
+        if (!isValidIban("iban-3")) {
+            return
+        }
         $.ajax({
             url: action,
             method: "POST",

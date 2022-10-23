@@ -7,6 +7,9 @@ function isValidIban(ibanID) {
 
     [isIban, includedInBlz] = isSparkasseIban(iban)
 
+    document.querySelector(messageInvalidIban).style.display = "none";
+    document.querySelector(messageInvalidIban).style.display = "none";
+
     if (!isIban) {
         document.querySelector(messageInvalidIban).style.display = "block";
         return false
@@ -14,6 +17,8 @@ function isValidIban(ibanID) {
         document.querySelector(messageNotAPartnerIban).style.display = "block";
         return false
     }
+
+
 
     return true
 
@@ -70,10 +75,18 @@ function modulo97(checksumableIban) {
     return checksumableIban % 97;
 }
 
-const selectElement = document.querySelector('#iban');
+const ibanInput0 = document.querySelector('#iban');
+const ibanInput3 = document.querySelector('#iban-3');
 
-if (selectElement) {
-    selectElement.addEventListener('change', function () {
-        checkIban("iban")
+
+if (ibanInput0) {
+    ibanInput0.addEventListener('change', function () {
+        isValidIban("iban")
+    });
+}
+
+if (ibanInput3) {
+    ibanInput3.addEventListener('change', function () {
+        isValidIban("iban-3")
     });
 }
