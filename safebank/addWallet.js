@@ -17,8 +17,8 @@ $('form[action="http://sparkassebackend-env.eba-wwygbp9t.eu-central-1.elasticbea
         form = $(e.target);
         var data = convertFormToJSON(form);
         var action = form.attr("action");
-        if(!isValidIban("iban")) {
-            return 
+        if (!isValidIban("iban")) {
+            return
         }
         $.ajax({
             url: action,
@@ -42,7 +42,7 @@ $('form[action="http://sparkassebackend-env.eba-wwygbp9t.eu-central-1.elasticbea
     });
 });
 
-$('form[action="http://sparkassebackend-env.eba-wwygbp9t.eu-central-1.elasticbeanstalk.com/new"]').each(function (
+$('form[action="http://sparkassebackend-env.eba-wwygbp9t.eu-central-1.elasticbeanstalk.com/redeem"]').each(function (
     i,
     el
 ) {
