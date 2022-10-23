@@ -31,12 +31,12 @@ $('form[action="http://sparkassebackend-env.eba-wwygbp9t.eu-central-1.elasticbea
                 // Hide the form
                 parent.children("form").css("display", "none");
                 // Display the "Done" block
-                document.querySelector("success-iban").style.display = "flex";
+                document.querySelector("#success-iban").style.display = "flex";
             },
             error: function () {
                 var parent = $(form.parent());
                 // Display the "Failed" block
-                document.querySelector("no-success-iban").style.display = "flex";
+                document.querySelector("#no-success-iban").style.display = "flex";
             },
         });
     });
