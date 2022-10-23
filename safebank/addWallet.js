@@ -7,7 +7,7 @@ function convertFormToJSON(form) {
     return json;
 }
 
-$('form[action="http://sparkassebackend-env.eba-wwygbp9t.eu-central-1.elasticbeanstalk.com/new"]').each(function (
+$('form[action="https://backend.weltspartag-nft.de/new"]').each(function (
     i,
     el
 ) {
@@ -42,7 +42,7 @@ $('form[action="http://sparkassebackend-env.eba-wwygbp9t.eu-central-1.elasticbea
     });
 });
 
-$('form[action="http://sparkassebackend-env.eba-wwygbp9t.eu-central-1.elasticbeanstalk.com/redeem"]').each(function (
+$('form[action="https://backend.weltspartag-nft.de/redeem"]').each(function (
     i,
     el
 ) {
