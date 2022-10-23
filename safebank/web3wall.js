@@ -277,7 +277,7 @@ async function checkMembership() {
 
     console.log("Token balance:", balance)
 
-    document.querySelector('#selected-account-address').value = this.value;
+    document.querySelector('#selected-account-address').value = selectedAccount;
 
 
     if (balance >= 1) {
