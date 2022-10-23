@@ -55,7 +55,7 @@ function init() {
         'custom-coinbase': {
             display: {
                 logo: 'https://avatars.githubusercontent.com/u/18060234?s=280&v=4',
-                name: 'Coinbase',
+                name: 'Coinbase Wallet',
                 description: 'Connect to your Coinbase Wallet',
             },
             options: {
