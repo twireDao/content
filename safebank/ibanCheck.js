@@ -8,7 +8,7 @@ function isValidIban(ibanID) {
     [isIban, includedInBlz] = isSparkasseIban(iban)
 
     document.querySelector(messageInvalidIban).style.display = "none";
-    document.querySelector(messageInvalidIban).style.display = "none";
+    document.querySelector(messageNotAPartnerIban).style.display = "none";
 
     if (!isIban) {
         document.querySelector(messageInvalidIban).style.display = "block";
